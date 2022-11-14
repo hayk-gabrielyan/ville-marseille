@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ville de Marseille - Contact</title>
+    <link rel="stylesheet" href="marseille7.css">
+    <link rel="shortcut icon" type="image/png" href="img/logo.png"/>
+</head>
+<body>
+
+    <!--header - start -->
+<header>
+    <a href="marseille1.html"><img class="logo" src="img/logo.png" alt="Ville de Marseille" ></a>
+    <h1 id="titre-header"><a href="marseille1.html">Ville de Marseille</a></h1>
+    <div id="wrap">
+    <nav class="menu">
+      <ul class="navbar">
+        <li class="btn"><a href="marseille1.html">Accueil</a></li>
+        <li class="btn"><a href="marseille2.html">Histoire</a></li>
+        <li class="btn"><a href="#">Sorties</a><ul>
+          <li class="btn"><a href="marseille4.html">Plages</a></li>
+          <li class="btn"><a href="marseille3.html">Randonnées</a></li>
+          <li class="btn"><a href="marseille5.html">Parcs</a></li>
+          <li class="btn"><a href="marseille6.html">Musées</a></li>
+        </ul>
+  
+        </li>
+        <li class="btn"><a href="#">Information</a>
+          <ul>
+            <li class="btn"><a href="marseille7.html">contact</a></li>
+  
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!--header - end -->
+
+    <section id="contact">
+        <div class="container">
+            <div class="titre">
+                <h1>Contactez-Nous</h1>
+                <p>Des questions ? Des idées ? Des conseilles ? On prends touts vos questions !</p>
+            </div>
+            <form action="action.php" method="post">
+                <div>
+                    <label for="name">Votre Nom :</label>
+                    <input type="text" id="name" name="user_name" placeholder="Entrer votre nom">
+                </div>
+
+                <div>
+                    <label for="first">Votre Prénom :</label>
+                    <input type="first" id="first" name="user_first" placeholder="Entrer votre prénom">
+                </div>
+
+                <div>
+                    <label for="mail">Votre E-mail&nbsp;:</label>
+                    <input type="email" id="mail" name="user_mail" placeholder="Entrer votre email">
+                </div>
+
+                <div>
+                    <label for="tel">Votre Numéro&nbsp;:</label>
+                    <input type="number" id="tel" name="user_num" placeholder="Entrer votre numéro">
+                </div>
+
+                <div>
+                    <label for="sujet">Quel est le sujet de votre message ?</label>
+                    <select name="sujet" id="sujet" required>
+                        <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+                        <option value="probleme-site">Problème sur le site</option>
+                        <option value="beug">Beug récurrent</option>
+                        <option value="postuler">Postuler</option>
+                        <option value="autre">Autre...</option>
+                    </select>
+                </div>
+                <label for="msg"></label>
+                <textarea id="msg" type="msg" name="user_message" placeholder="Bonjour, je vous contacte car...."></textarea>
+                <button type="submit" name="valider">Envoyer le message</button>
+            </form>
+        </div>
+    </section>
+        <!--footer - start -->
+        <footer>
+            <img class="box-shadow" id="mars-ville" src="img/Logo-ville-de-Marseille.png" alt="">
+            <img class="box-shadow" id="metropol-logo" src="img/Logo_Aix_Marseille.png" alt="">
+            <img class="box-shadow" id="cons-gen-logo" src="img/depart-13.png" alt="">
+            <ul class="other-links">
+              <li><a class="lien-footer" href="https://www.sortiramarseille.fr/tout-l-agenda/">- Sortir à Marseille</a></li>
+              <li><a class="lien-footer" href="https://www.om.fr/fr">- Site officiel de l'OM</a></li>
+              <li><a class="lien-footer" href="https://www.tripadvisor.fr/Tourism-g187253-Marseille_Bouches_du_Rhone_Provence_Alpes_Cote_d_Azur-Vacations.html">- Trip advisor</a></li>
+            </ul>
+            <ul id="res-soc">
+              <li><a href="https://fr-fr.facebook.com/marseilleville/" ><img src="img/facebook-logo.png" alt=""></a></li>
+              <li><a href="https://twitter.com/marseille?lang=fr" ><img src="img/twitter-logo.png" alt=""></a></li>
+              <li><a href="https://www.youtube.com/user/villedemarseille" ><img src="img/youtube-logo.png" alt=""></a></li>
+            </ul>
+          </footer>
+        <!--footer - end -->
+</body>
+</html>
